@@ -1,9 +1,9 @@
 //
 //  BirdGrowthTests.swift
-//  BirdGrowthTests
+//  Brushing Tooth
 //
-//  Created by Yukinaga Azuma on 2015/04/11.
-//  Copyright (c) 2015年 Yukinaga Azuma. All rights reserved.
+//  Created by Asuka Kadowaki on 2015/05/05.
+//  Copyright (c) 2015年 Asuka Kadowaki. All rights reserved.
 //
 
 import UIKit

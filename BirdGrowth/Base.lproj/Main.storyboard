@@ -1,25 +1,120 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BirdGrowth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="KNC-yZ-ysc"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Fv-Xz-2Wy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="歯みがく?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Jlb-xi-6lb">
+                                <rect key="frame" x="0.0" y="351" width="320" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O50-Dr-f9j">
+                                <rect key="frame" x="14" y="478" width="290" height="70"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="34"/>
+                                <color key="textColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeR-hJ-3LL">
+                                <rect key="frame" x="79" y="434" width="162" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="5Y0-rB-97L"/>
+                                    <constraint firstAttribute="width" constant="162" id="kyZ-UG-RBQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
+                                <state key="normal" title="50回みがこう！">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="talk:" destination="vXZ-lx-hvc" eventType="touchDown" id="Zbe-Ax-6hP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvv-7x-KBN">
+                                <rect key="frame" x="245" y="491" width="59" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="4zG-By-fB6"/>
+                                    <constraint firstAttribute="height" constant="50" id="xbs-Nx-ZDG"/>
+                                </constraints>
+                                <state key="normal" image="1339033610a09f5958510ffdd145bac36131f5e86e.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postTwitter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nLv-VF-4ie"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDu-wJ-0oD">
+                                <rect key="frame" x="24" y="491" width="56" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="h4N-DA-nzo"/>
+                                    <constraint firstAttribute="width" constant="56" id="vez-n2-MRx"/>
+                                </constraints>
+                                <state key="normal" image="Screen Shot 2015-05-12 at 12.22.17 AM.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postFacebook:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aUt-5D-fUg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="0.png" translatesAutoresizingMaskIntoConstraints="NO" id="vzv-0t-are">
+                                <rect key="frame" x="0.0" y="55" width="320" height="261"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97953344666946585" green="0.97829060216019625" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lDu-wJ-0oD" firstAttribute="top" secondItem="Jlb-xi-6lb" secondAttribute="bottom" constant="86" id="0i1-kC-job"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vzv-0t-are" secondAttribute="trailing" constant="-16" id="6Jz-d1-mMK"/>
+                            <constraint firstItem="Jlb-xi-6lb" firstAttribute="top" secondItem="vzv-0t-are" secondAttribute="bottom" constant="35" id="7uj-h6-nZD"/>
+                            <constraint firstItem="O50-Dr-f9j" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-2" id="BHH-hy-L6m"/>
+                            <constraint firstItem="kvv-7x-KBN" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="DFu-4J-aQx"/>
+                            <constraint firstItem="7Fv-Xz-2Wy" firstAttribute="top" secondItem="O50-Dr-f9j" secondAttribute="bottom" constant="20" id="DtM-yu-vTM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jlb-xi-6lb" secondAttribute="trailing" constant="-16" id="H1H-0W-Yb7"/>
+                            <constraint firstItem="IeR-hJ-3LL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="63" id="KeV-Fc-VjK"/>
+                            <constraint firstItem="lDu-wJ-0oD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="PDu-Bx-ofM"/>
+                            <constraint firstItem="O50-Dr-f9j" firstAttribute="top" secondItem="Jlb-xi-6lb" secondAttribute="bottom" constant="73" id="R6M-Rj-knc"/>
+                            <constraint firstItem="7Fv-Xz-2Wy" firstAttribute="top" secondItem="lDu-wJ-0oD" secondAttribute="bottom" constant="27" id="cat-TF-LIl"/>
+                            <constraint firstItem="IeR-hJ-3LL" firstAttribute="top" secondItem="Jlb-xi-6lb" secondAttribute="bottom" constant="29" id="eEI-S9-sMP"/>
+                            <constraint firstItem="IeR-hJ-3LL" firstAttribute="top" secondItem="Jlb-xi-6lb" secondAttribute="bottom" constant="29" id="fu4-YN-PK8"/>
+                            <constraint firstItem="7Fv-Xz-2Wy" firstAttribute="top" secondItem="IeR-hJ-3LL" secondAttribute="bottom" constant="89" id="gdt-0g-RXm"/>
+                            <constraint firstItem="vzv-0t-are" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="nIt-QH-Zmi"/>
+                            <constraint firstItem="Jlb-xi-6lb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="plX-a9-mMX"/>
+                            <constraint firstItem="O50-Dr-f9j" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="vKF-4o-vqn"/>
+                            <constraint firstItem="7Fv-Xz-2Wy" firstAttribute="top" secondItem="kvv-7x-KBN" secondAttribute="bottom" constant="27" id="w64-1q-veZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IeR-hJ-3LL" secondAttribute="trailing" constant="63" id="zvi-Si-z2y"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="birdImageView" destination="vzv-0t-are" id="AXV-pn-q6T"/>
+                        <outlet property="countLabel" destination="O50-Dr-f9j" id="QpT-C5-wfB"/>
+                        <outlet property="messageLabel" destination="Jlb-xi-6lb" id="xDj-Fi-6wK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="538" y="78"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="0.png" width="440" height="440"/>
+        <image name="1339033610a09f5958510ffdd145bac36131f5e86e.jpg" width="300" height="300"/>
+        <image name="Screen Shot 2015-05-12 at 12.22.17 AM.png" width="252" height="256"/>
+    </resources>
 </document>
